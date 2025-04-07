@@ -90,6 +90,7 @@ include 'editar.php';
       <tbody>
         <?php
           // Se asegura de que la función listar_registros devuelve un array de objetos Estudiante
+          $datos = listar_registros(); 
 
           if (!empty($datos)) {
               foreach ($datos as $Estudiante) {
@@ -111,3 +112,5 @@ include 'editar.php';
   </div>
 </body>
 </html>
+
+
